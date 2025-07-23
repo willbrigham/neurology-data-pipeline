@@ -1,0 +1,1649 @@
+{
+  "result_count": 20,
+  "results": [
+    {
+      "created_epoch": "1275928046000",
+      "enumeration_type": "NPI-2",
+      "last_updated_epoch": "1706557553000",
+      "number": "1184944662",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "455 TOLL GATE RD",
+          "city": "WARWICK",
+          "state": "RI",
+          "postal_code": "028862759",
+          "telephone_number": "401-737-7010",
+          "fax_number": "401-736-4546"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "455 TOLL GATE RD",
+          "city": "WARWICK",
+          "state": "RI",
+          "postal_code": "028862759",
+          "telephone_number": "401-737-7010",
+          "fax_number": "401-736-4546"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "organization_name": "AFFINITY PHYSICIANS LLC.",
+        "organizational_subpart": "YES",
+        "parent_organization_legal_business_name": "KENT COUNTY MEMORIAL HOSPITAL",
+        "enumeration_date": "2010-06-07",
+        "last_updated": "2024-01-29",
+        "certification_date": "2024-01-29",
+        "status": "A",
+        "authorized_official_first_name": "JAMES",
+        "authorized_official_last_name": "BURKE",
+        "authorized_official_telephone_number": "4017377010",
+        "authorized_official_title_or_position": "VP Finance",
+        "authorized_official_name_prefix": "--",
+        "authorized_official_name_suffix": "--"
+      },
+      "taxonomies": [
+        {
+          "code": "172V00000X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Community Health Worker",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "103G00000X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Clinical Neuropsychologist",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "104100000X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Social Worker",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "207L00000X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Anesthesiology",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "207P00000X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Emergency Medicine",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "207RC0000X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Internal Medicine, Cardiovascular Disease",
+          "state": "RI",
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "207RH0003X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Internal Medicine, Hematology & Oncology",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "207V00000X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Obstetrics & Gynecology",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "207VE0102X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Obstetrics & Gynecology, Reproductive Endocrinology",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "208000000X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Pediatrics",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "2084P0800X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Psychiatry & Neurology, Psychiatry",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "208600000X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Surgery",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "213ES0103X",
+          "taxonomy_group": "",
+          "desc": "Podiatrist, Foot & Ankle Surgery",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "207R00000X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Internal Medicine",
+          "state": "RI",
+          "license": null,
+          "primary": true
+        }
+      ],
+      "identifiers": [
+        {
+          "code": "05",
+          "desc": "MEDICAID",
+          "issuer": null,
+          "identifier": "AF82916",
+          "state": "RI"
+        }
+      ],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1228873006000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1723214590000",
+      "number": "1477798106",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "650 FROM RD STE 506",
+          "city": "PARAMUS",
+          "state": "NJ",
+          "postal_code": "076523517",
+          "telephone_number": "551-996-8100"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "650 FROM RD STE 506",
+          "city": "PARAMUS",
+          "state": "NJ",
+          "postal_code": "076523517",
+          "telephone_number": "551-996-8100"
+        }
+      ],
+      "practiceLocations": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "593 EDDY ST",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029034923",
+          "telephone_number": "401-444-8795",
+          "fax_number": "401-444-8781"
+        }
+      ],
+      "basic": {
+        "first_name": "UMER",
+        "last_name": "AKBAR",
+        "credential": "MD",
+        "sole_proprietor": "NO",
+        "sex": "M",
+        "enumeration_date": "2008-12-09",
+        "last_updated": "2024-08-09",
+        "certification_date": "2024-08-09",
+        "status": "A",
+        "name_prefix": "Dr."
+      },
+      "taxonomies": [
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "RI",
+          "license": "MD14627",
+          "primary": false
+        },
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "NJ",
+          "license": "25MA12235600",
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1143654793000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1191957525000",
+      "number": "1609837707",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "333 SCHOOL ST",
+          "address_2": "SUITE 103",
+          "city": "PAWTUCKET",
+          "state": "RI",
+          "postal_code": "028605334",
+          "telephone_number": "401-724-4100"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "333 SCHOOL ST",
+          "address_2": "SUITE 103",
+          "city": "PAWTUCKET",
+          "state": "RI",
+          "postal_code": "028605334",
+          "telephone_number": "401-724-4100"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "first_name": "MOTASEM",
+        "last_name": "AL-YACOUB",
+        "middle_name": "A",
+        "credential": "M.D.",
+        "sole_proprietor": "YES",
+        "sex": "M",
+        "enumeration_date": "2006-03-29",
+        "last_updated": "2007-10-09",
+        "status": "A"
+      },
+      "taxonomies": [
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "MA",
+          "license": "212368",
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1176493988000",
+      "enumeration_type": "NPI-2",
+      "last_updated_epoch": "1722961340000",
+      "number": "1184849556",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "1239 HARTFORD AVE STE 1",
+          "city": "JOHNSTON",
+          "state": "RI",
+          "postal_code": "029197137",
+          "telephone_number": "401-272-7660",
+          "fax_number": "401-421-2730"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "1526 ATWOOD AVE",
+          "address_2": "SUITE 200",
+          "city": "JOHNSTON",
+          "state": "RI",
+          "postal_code": "029193289",
+          "telephone_number": "401-272-7660",
+          "fax_number": "401-421-2730"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "organization_name": "ALBERT J. MARANO, MD, INC",
+        "organizational_subpart": "NO",
+        "enumeration_date": "2007-04-13",
+        "last_updated": "2024-08-06",
+        "certification_date": "2024-08-06",
+        "status": "A",
+        "authorized_official_first_name": "ALBERT",
+        "authorized_official_last_name": "MARANO",
+        "authorized_official_middle_name": "JOSEPH",
+        "authorized_official_telephone_number": "4012727660",
+        "authorized_official_title_or_position": "PRESIDENT",
+        "authorized_official_name_prefix": "Dr.",
+        "authorized_official_name_suffix": "--",
+        "authorized_official_credential": "MD"
+      },
+      "taxonomies": [
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "193400000X - Single Specialty Group",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "RI",
+          "license": "RI08350",
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1374256329000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1527876362000",
+      "number": "1336581347",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "117 ELLENFIELD ST STE 101",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029054513",
+          "telephone_number": "401-444-6779",
+          "fax_number": "401-444-6912"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "593 EDDY ST",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "02903",
+          "telephone_number": "401-444-6195"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "first_name": "ANA",
+        "last_name": "ALBUJA PONCE",
+        "middle_name": "CRISTINA",
+        "credential": "MD",
+        "sole_proprietor": "NO",
+        "sex": "F",
+        "enumeration_date": "2013-07-19",
+        "last_updated": "2018-06-01",
+        "status": "A"
+      },
+      "taxonomies": [
+        {
+          "code": "2084N0402X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology with Special Qualifications in Child Neurology",
+          "state": "KY",
+          "license": "R3140",
+          "primary": false
+        },
+        {
+          "code": "2084N0402X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology with Special Qualifications in Child Neurology",
+          "state": "RI",
+          "license": "MD16153",
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1512623291000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1538139668000",
+      "number": "1881109288",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "800 WASHINGTON ST",
+          "city": "BOSTON",
+          "state": "MA",
+          "postal_code": "02111",
+          "telephone_number": "617-636-5000"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "800 WASHINGTON ST",
+          "city": "BOSTON",
+          "state": "MA",
+          "postal_code": "021111552"
+        }
+      ],
+      "practiceLocations": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "825 CHALKSTONE AVE",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029084728",
+          "telephone_number": "401-456-2000"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "41 BURLINGTON MALL RD",
+          "city": "BURLINGTON",
+          "state": "MA",
+          "postal_code": "01805",
+          "telephone_number": "781-744-5100"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "16 HAYDEN AVE",
+          "city": "LEXINGTON",
+          "state": "MA",
+          "postal_code": "024217929",
+          "telephone_number": "781-372-7000"
+        }
+      ],
+      "basic": {
+        "first_name": "YARA",
+        "last_name": "ALHARBI",
+        "sole_proprietor": "NO",
+        "sex": "F",
+        "enumeration_date": "2017-12-07",
+        "last_updated": "2018-09-28",
+        "status": "A"
+      },
+      "taxonomies": [
+        {
+          "code": "207R00000X",
+          "taxonomy_group": "",
+          "desc": "Internal Medicine",
+          "state": "RI",
+          "license": "LP04175",
+          "primary": false
+        },
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "MA",
+          "license": "000000000000000",
+          "primary": false
+        },
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "MA",
+          "license": "277238",
+          "primary": true
+        }
+      ],
+      "identifiers": [
+        {
+          "code": "01",
+          "desc": "Other (non-Medicare)",
+          "issuer": "hospital",
+          "identifier": "00000000000",
+          "state": null
+        }
+      ],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1533215196000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1752684241000",
+      "number": "1699253591",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "593 EDDY STREET",
+          "address_2": "APC 5",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029034923",
+          "telephone_number": "401-444-6440",
+          "fax_number": "401-444-6858"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "117 ELLENFIELD ST STE 101",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029054541",
+          "telephone_number": "401-444-6779",
+          "fax_number": "401-444-6912"
+        }
+      ],
+      "practiceLocations": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "164 SUMMIT AVE",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029062894",
+          "telephone_number": "401-793-2500",
+          "fax_number": "401-793-3612"
+        }
+      ],
+      "basic": {
+        "first_name": "SAUD",
+        "last_name": "ALHUSAINI",
+        "credential": "MD, PhD",
+        "sole_proprietor": "YES",
+        "sex": "M",
+        "enumeration_date": "2018-08-02",
+        "last_updated": "2025-07-16",
+        "certification_date": "2025-07-16",
+        "status": "A"
+      },
+      "taxonomies": [
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "RI",
+          "license": "MD17653",
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1150659554000",
+      "enumeration_type": "NPI-2",
+      "last_updated_epoch": "1236177472000",
+      "number": "1316982820",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "4519 POST RD",
+          "city": "EAST GREENWICH",
+          "state": "RI",
+          "postal_code": "028184121",
+          "telephone_number": "401-886-7866",
+          "fax_number": "401-886-7807"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "4519 POST RD",
+          "city": "EAST GREENWICH",
+          "state": "RI",
+          "postal_code": "028184121",
+          "telephone_number": "401-886-7866",
+          "fax_number": "401-886-7807"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "organization_name": "ARSHAD IQBAL, MD. INC",
+        "organizational_subpart": "NO",
+        "enumeration_date": "2006-06-18",
+        "last_updated": "2009-03-04",
+        "status": "A",
+        "authorized_official_first_name": "ASMA",
+        "authorized_official_last_name": "IQBAL",
+        "authorized_official_telephone_number": "4018867866",
+        "authorized_official_title_or_position": "Office Manager",
+        "authorized_official_name_prefix": "Ms.",
+        "authorized_official_name_suffix": "--"
+      },
+      "taxonomies": [
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "193400000X - Single Specialty Group",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "RI",
+          "license": "MD09296",
+          "primary": true
+        }
+      ],
+      "identifiers": [
+        {
+          "code": "01",
+          "desc": "Other (non-Medicare)",
+          "issuer": "STATE LICENCE",
+          "identifier": "MD09296",
+          "state": "RI"
+        }
+      ],
+      "endpoints": [],
+      "other_names": [
+        {
+          "organization_name": "ARSHAD IQBAL, MD. INC",
+          "type": "Doing Business As",
+          "code": "3"
+        }
+      ]
+    },
+    {
+      "created_epoch": "1531834339000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1712778841000",
+      "number": "1003392689",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "593 EDDY ST",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029034923",
+          "telephone_number": "401-606-2645",
+          "fax_number": "401-606-4386"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "117 ELLENFIELD ST STE 101",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029054541",
+          "telephone_number": "202-826-8608"
+        }
+      ],
+      "practiceLocations": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "1364 CLIFTON RD NE",
+          "city": "ATLANTA",
+          "state": "GA",
+          "postal_code": "303221059",
+          "telephone_number": "404-712-2000"
+        }
+      ],
+      "basic": {
+        "first_name": "EUGENIE",
+        "last_name": "ATALLAH",
+        "sole_proprietor": "YES",
+        "sex": "F",
+        "enumeration_date": "2018-07-17",
+        "last_updated": "2024-04-10",
+        "certification_date": "2024-04-10",
+        "status": "A"
+      },
+      "taxonomies": [
+        {
+          "code": "2084A2900X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurocritical Care",
+          "state": "RI",
+          "license": "MD19563",
+          "primary": false
+        },
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "GA",
+          "license": "GA91180",
+          "primary": false
+        },
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "RI",
+          "license": "MD19563",
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1153496773000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1734382723000",
+      "number": "1023039740",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "63 EDDIE DOWLING HWY STE 5",
+          "city": "NORTH SMITHFIELD",
+          "state": "RI",
+          "postal_code": "028967322",
+          "telephone_number": "401-762-0170",
+          "fax_number": "401-762-3774"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "63 EDDIE DOWLING HWY STE 5",
+          "city": "NORTH SMITHFIELD",
+          "state": "RI",
+          "postal_code": "028967322",
+          "telephone_number": "401-762-0170",
+          "fax_number": "401-762-3774"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "first_name": "DENNIS",
+        "last_name": "AUMENTADO",
+        "middle_name": "JOSEPH",
+        "credential": "M.D.",
+        "sole_proprietor": "YES",
+        "sex": "M",
+        "enumeration_date": "2006-07-21",
+        "last_updated": "2024-12-16",
+        "certification_date": "2024-12-16",
+        "status": "A"
+      },
+      "taxonomies": [
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "RI",
+          "license": "7966",
+          "primary": true
+        }
+      ],
+      "identifiers": [
+        {
+          "code": "01",
+          "desc": "Other (non-Medicare)",
+          "issuer": "BlueChip",
+          "identifier": "202044",
+          "state": null
+        },
+        {
+          "code": "01",
+          "desc": "Other (non-Medicare)",
+          "issuer": "Tufts",
+          "identifier": "728570",
+          "state": null
+        }
+      ],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1401205766000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1620316484000",
+      "number": "1538571518",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "593 EDDY STREET",
+          "address_2": "APC 5",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029034923"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "593 EDDY STREET, APC 5",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029034923",
+          "telephone_number": "401-444-3032"
+        }
+      ],
+      "practiceLocations": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "330 BROOKLINE AVE",
+          "city": "BOSTON",
+          "state": "MA",
+          "postal_code": "022155400",
+          "telephone_number": "617-667-2268",
+          "fax_number": "617-667-2987"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "593 EDDY STREET, APC 5",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029034923",
+          "telephone_number": "401-444-6440",
+          "fax_number": "401-444-6858"
+        }
+      ],
+      "basic": {
+        "first_name": "NEISHAY",
+        "last_name": "AYUB",
+        "credential": "M.D.",
+        "sole_proprietor": "YES",
+        "sex": "F",
+        "enumeration_date": "2014-05-27",
+        "last_updated": "2021-05-06",
+        "certification_date": "2021-04-08",
+        "status": "A"
+      },
+      "taxonomies": [
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "MA",
+          "license": "262806",
+          "primary": false
+        },
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "RI",
+          "license": "MD17110",
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1468339920000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1708370488000",
+      "number": "1649622846",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "6410 FANNIN ST STE 1014",
+          "city": "HOUSTON",
+          "state": "TX",
+          "postal_code": "770305301",
+          "telephone_number": "832-325-7080",
+          "fax_number": "713-512-2239"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "6410 FANNIN ST STE 1014",
+          "city": "HOUSTON",
+          "state": "TX",
+          "postal_code": "770305301",
+          "telephone_number": "832-325-7080",
+          "fax_number": "713-512-2239"
+        }
+      ],
+      "practiceLocations": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "593 EDDY ST, APC 5",
+          "address_2": "BROWN NEUROLOGY",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "02903",
+          "telephone_number": "312-504-1114"
+        }
+      ],
+      "basic": {
+        "first_name": "AIDAN",
+        "last_name": "AZHER",
+        "middle_name": "IDREES",
+        "credential": "M.D.",
+        "sole_proprietor": "YES",
+        "sex": "M",
+        "enumeration_date": "2016-07-12",
+        "last_updated": "2024-02-19",
+        "certification_date": "2024-02-19",
+        "status": "A"
+      },
+      "taxonomies": [
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "TX",
+          "license": "T0168",
+          "primary": false
+        },
+        {
+          "code": "390200000X",
+          "taxonomy_group": "",
+          "desc": "Student in an Organized Health Care Education/Training Program",
+          "state": "OH",
+          "license": "57027708",
+          "primary": false
+        },
+        {
+          "code": "2084V0102X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Vascular Neurology",
+          "state": "TX",
+          "license": "T0168",
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": [
+        {
+          "type": "Former Name",
+          "code": "1",
+          "credential": "MD",
+          "first_name": "IDREES",
+          "last_name": "AZHER"
+        }
+      ]
+    },
+    {
+      "created_epoch": "1403706346000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1562099025000",
+      "number": "1275948572",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "1 HOPPIN STREET",
+          "address_2": "COROWEST SUITE 202",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "02903",
+          "telephone_number": "401-444-6551",
+          "fax_number": "401-444-6587"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "117 ELLENFIELD ST STE 101",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029054541",
+          "telephone_number": "401-444-6779",
+          "fax_number": "401-444-6912"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "first_name": "TATIANA",
+        "last_name": "BAKAEVA",
+        "credential": "M.D., Ph.D.",
+        "sole_proprietor": "NO",
+        "sex": "F",
+        "enumeration_date": "2014-06-25",
+        "last_updated": "2019-07-02",
+        "status": "A"
+      },
+      "taxonomies": [
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "MA",
+          "license": "272919",
+          "primary": false
+        },
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "RI",
+          "license": "MD16734",
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1340825793000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1633484242000",
+      "number": "1730443482",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "335R PRAIRIE AVE",
+          "address_2": "SUITE 1A",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "02905",
+          "telephone_number": "401-444-2796"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "335R PRAIRIE AVE",
+          "address_2": "SUITE 1A",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "02905",
+          "telephone_number": "401-444-2796"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "first_name": "LUCA",
+        "last_name": "BARTOLINI",
+        "credential": "MD",
+        "sole_proprietor": "NO",
+        "sex": "M",
+        "enumeration_date": "2012-06-27",
+        "last_updated": "2021-10-05",
+        "certification_date": "2021-10-05",
+        "status": "A",
+        "name_prefix": "Dr."
+      },
+      "taxonomies": [
+        {
+          "code": "2084E0001X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Epilepsy",
+          "state": "RI",
+          "license": "MD16488",
+          "primary": false
+        },
+        {
+          "code": "2084N0402X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology with Special Qualifications in Child Neurology",
+          "state": "RI",
+          "license": "MD16488",
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1165415470000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1592235118000",
+      "number": "1881753135",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "70 KENYON AVE",
+          "city": "WAKEFIELD",
+          "state": "RI",
+          "postal_code": "028794239",
+          "telephone_number": "401-789-4885",
+          "fax_number": "401-792-0201"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "360 KINGSTOWN RD",
+          "address_2": "UNIT 102",
+          "city": "NARRAGANSETT",
+          "state": "RI",
+          "postal_code": "028823239",
+          "telephone_number": "401-789-4885",
+          "fax_number": "401-792-0201"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "first_name": "PETER",
+        "last_name": "BELLAFIORE",
+        "middle_name": "JOSEPH",
+        "credential": "MD",
+        "sole_proprietor": "NO",
+        "sex": "M",
+        "enumeration_date": "2006-12-06",
+        "last_updated": "2020-06-15",
+        "certification_date": "2020-06-15",
+        "status": "A"
+      },
+      "taxonomies": [
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "RI",
+          "license": "MD8924",
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1166208738000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1678238276000",
+      "number": "1457413379",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "830 CHALKSTONE AVE",
+          "address_2": "PROVIDENCE VA MEDICAL CENTER, DEPT OF NEUROLOGY",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029084734",
+          "telephone_number": "401-273-7100"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "830 CHALKSTONE AVE",
+          "address_2": "PROVIDENCE VA MEDICAL CENTER, DEPT OF NEUROLOGY",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029084734",
+          "telephone_number": "401-273-7100"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "first_name": "JACOB",
+        "last_name": "BERGER",
+        "credential": "M.D.",
+        "sole_proprietor": "NO",
+        "sex": "M",
+        "enumeration_date": "2006-12-15",
+        "last_updated": "2023-03-07",
+        "status": "A",
+        "name_prefix": "Dr.",
+        "name_suffix": "--"
+      },
+      "taxonomies": [
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "RI",
+          "license": "MD12584",
+          "primary": true
+        }
+      ],
+      "identifiers": [
+        {
+          "code": "05",
+          "desc": "MEDICAID",
+          "issuer": null,
+          "identifier": "02682699",
+          "state": "NY"
+        },
+        {
+          "code": "01",
+          "desc": "Other (non-Medicare)",
+          "issuer": "RI license",
+          "identifier": "12584",
+          "state": "RI"
+        },
+        {
+          "code": "01",
+          "desc": "Other (non-Medicare)",
+          "issuer": "uhc",
+          "identifier": "2575620",
+          "state": "NY"
+        },
+        {
+          "code": "01",
+          "desc": "Other (non-Medicare)",
+          "issuer": "MVP",
+          "identifier": "790791",
+          "state": "NY"
+        },
+        {
+          "code": "01",
+          "desc": "Other (non-Medicare)",
+          "issuer": "OXFORD",
+          "identifier": "P3628039",
+          "state": "NY"
+        }
+      ],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1147765450000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1183957886000",
+      "number": "1417908021",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "50 MAUDE ST",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029084325",
+          "telephone_number": "401-456-5368",
+          "fax_number": "401-456-5782"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "877 CHALKSTONE AVE",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029084728",
+          "telephone_number": "401-456-2310",
+          "fax_number": "401-456-6437"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "first_name": "OSCAR",
+        "last_name": "BERNAL",
+        "credential": "M.D.",
+        "sole_proprietor": "NO",
+        "sex": "M",
+        "enumeration_date": "2006-05-16",
+        "last_updated": "2007-07-09",
+        "status": "A",
+        "name_prefix": "Dr.",
+        "name_suffix": "--"
+      },
+      "taxonomies": [
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "RI",
+          "license": "11070",
+          "primary": true
+        }
+      ],
+      "identifiers": [
+        {
+          "code": "05",
+          "desc": "MEDICAID",
+          "issuer": null,
+          "identifier": "9021550",
+          "state": "RI"
+        }
+      ],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1164202440000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1183947785000",
+      "number": "1952476202",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "30 WOODBURY RD",
+          "city": "CRANSTON",
+          "state": "RI",
+          "postal_code": "029053317",
+          "telephone_number": "401-467-9258"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "593 EDDY ST",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029034923",
+          "telephone_number": "401-444-5418"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "first_name": "CAROLYN",
+        "last_name": "BIBEAULT",
+        "middle_name": "EMILY",
+        "sole_proprietor": "YES",
+        "sex": "F",
+        "enumeration_date": "2006-11-22",
+        "last_updated": "2007-07-08",
+        "status": "A",
+        "name_prefix": "Ms.",
+        "name_suffix": "--"
+      },
+      "taxonomies": [
+        {
+          "code": "2251N0400X",
+          "taxonomy_group": "",
+          "desc": "Physical Therapist, Neurology",
+          "state": "RI",
+          "license": "730",
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1213212132000",
+      "enumeration_type": "NPI-1",
+      "last_updated_epoch": "1684252007000",
+      "number": "1275793432",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "117 ELLENFIELD ST STE 101",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "029054541",
+          "telephone_number": "401-444-6779",
+          "fax_number": "401-444-6912"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "593 EDDY STREET APC 7 NICU",
+          "city": "PROVIDENCE",
+          "state": "RI",
+          "postal_code": "02903",
+          "telephone_number": "401-444-2734"
+        }
+      ],
+      "practiceLocations": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "1725 W HARRISON ST",
+          "address_2": "SUITE 1106",
+          "city": "CHICAGO",
+          "state": "IL",
+          "postal_code": "606123841",
+          "telephone_number": "312-942-4500",
+          "fax_number": "312-563-2206"
+        }
+      ],
+      "basic": {
+        "first_name": "TORREY",
+        "last_name": "BIRCH",
+        "middle_name": "BOLAND",
+        "credential": "M.D.",
+        "sole_proprietor": "NO",
+        "sex": "F",
+        "enumeration_date": "2008-06-11",
+        "last_updated": "2023-05-16",
+        "certification_date": "2023-05-03",
+        "status": "A",
+        "name_prefix": "Dr."
+      },
+      "taxonomies": [
+        {
+          "code": "2084A2900X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurocritical Care",
+          "state": "IL",
+          "license": "036-132319",
+          "primary": false
+        },
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "IL",
+          "license": "036.132319",
+          "primary": false
+        },
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "RI",
+          "license": "MD19099",
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": [
+        {
+          "type": "Former Name",
+          "code": "1",
+          "credential": "M.D.",
+          "first_name": "TORREY",
+          "last_name": "BOLAND",
+          "middle_name": "ANN",
+          "prefix": "Dr.",
+          "suffix": "--"
+        }
+      ]
+    },
+    {
+      "created_epoch": "1342196604000",
+      "enumeration_type": "NPI-2",
+      "last_updated_epoch": "1343674461000",
+      "number": "1033464276",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "219 CASS AVENUE",
+          "city": "WOONSOCKET",
+          "state": "RI",
+          "postal_code": "028954741",
+          "telephone_number": "401-769-4100"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "115 CASS AVE",
+          "city": "WOONSOCKET",
+          "state": "RI",
+          "postal_code": "028954705",
+          "telephone_number": "401-769-4100"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "organization_name": "BLACKSTONE MEDICAL CENTER, INC.",
+        "organizational_subpart": "YES",
+        "parent_organization_legal_business_name": "STEWARD MEDICAL HOLDINGS, LLC",
+        "enumeration_date": "2012-07-13",
+        "last_updated": "2012-07-30",
+        "status": "A",
+        "authorized_official_first_name": "JAMES",
+        "authorized_official_last_name": "RENNA",
+        "authorized_official_telephone_number": "6174194772",
+        "authorized_official_title_or_position": "CFO",
+        "authorized_official_name_prefix": "Mr.",
+        "authorized_official_name_suffix": "--"
+      },
+      "taxonomies": [
+        {
+          "code": "103G00000X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Clinical Neuropsychologist",
+          "state": "RI",
+          "license": "00117",
+          "primary": false
+        },
+        {
+          "code": "103TP0016X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Psychologist, Prescribing (Medical)",
+          "state": "RI",
+          "license": "00117",
+          "primary": false
+        },
+        {
+          "code": "2084N0400X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Psychiatry & Neurology, Neurology",
+          "state": "RI",
+          "license": "00117",
+          "primary": false
+        },
+        {
+          "code": "2084P0800X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Psychiatry & Neurology, Psychiatry",
+          "state": "RI",
+          "license": "00117",
+          "primary": false
+        },
+        {
+          "code": "363L00000X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Nurse Practitioner",
+          "state": "RI",
+          "license": "00117",
+          "primary": false
+        },
+        {
+          "code": "207R00000X",
+          "taxonomy_group": "193200000X - Multi-Specialty Group",
+          "desc": "Internal Medicine",
+          "state": "RI",
+          "license": "00117",
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": [
+        {
+          "organization_name": "BLACKSTONE MEDICAL CENTER PSYCH",
+          "type": "Other Name",
+          "code": "5"
+        }
+      ]
+    }
+  ]
+}

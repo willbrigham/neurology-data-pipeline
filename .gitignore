@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+
+# Virtual Environment
+venv/
+
+# Jupyter and VS Code
+.ipynb_checkpoints/
+.vscode/
+
+# Mac & System Files
+.DS_Store
+*.swp
+
+# Environment/Secrets (if added later)
+.env
+.env.*

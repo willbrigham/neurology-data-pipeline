@@ -7,7 +7,8 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Load the JSON file
-df = spark.read.json("data/raw/neurologists_ma.json")
+df = spark.read.option("multiLine", True).json("data/raw/neurologists_ma.json")
+df.show(5, truncate=False)
 
 # Print schema to understand the structure
 df.printSchema()

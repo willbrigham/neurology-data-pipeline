@@ -39,10 +39,17 @@ df_addr = df.select(
     explode("addresses").alias("address")
 ).select(
     "number",
-    col("address.address_purpose"),
-    col("address.state"),
+    col("address.address_1"),
+    col("address.address_2"),
     col("address.city"),
-    col("address.postal_code")
+    col("address.state"),
+    col("address.postal_code"),
+    col("address.address_type"),
+    col("address.address_purpose")
 )
 
 df_addr.show(10, truncate=False)
+
+# Write the output
+df_tax.write.mode("overwrite").json("data/processed/taxonomy_flattened.json")
+df_addr.write.mode("overwrite").json("data/processed/address_flattened.json")

@@ -18,3 +18,8 @@ venv/
 # Environment/Secrets (if added later)
 .env
 .env.*
+
+# Data files
+/data/
+
+# Ignore Spark artifacts folder

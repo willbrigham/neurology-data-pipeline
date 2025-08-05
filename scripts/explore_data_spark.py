@@ -4,6 +4,7 @@ from pyspark.sql.functions import explode, col
 # Initialize Spark session
 spark = SparkSession.builder \
     .appName("NeuroFinder") \
+    .config("spark.jars", "libs/mssql-jdbc-12.10.1.jre11.jar") \
     .getOrCreate()
 
 # Load the JSON file
@@ -53,3 +54,22 @@ df_addr.show(10, truncate=False)
 # Write the output
 df_tax.write.mode("overwrite").json("data/processed/taxonomy_flattened.json")
 df_addr.write.mode("overwrite").json("data/processed/address_flattened.json")
+
+jdbc_url = "jdbc:sqlserver://localhost:1433;databaseName=Neurology;encrypt=true;trustServerCertificate=true"
+connection_properties = {
+    "user": "sa",
+    "password": "Brigham123$",
+    "driver": "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+}
+
+# Create the database if needed (manually in SSMS or via PySpark + SQL later)
+
+# Write taxonomy table
+df_tax.write \
+    .mode("overwrite") \
+    .jdbc(url=jdbc_url, table="Taxonomy", properties=connection_properties)
+
+# Write address table
+df_addr.write \
+    .mode("overwrite") \
+    .jdbc(url=jdbc_url, table="Addresses", properties=connection_properties)

@@ -23,3 +23,4 @@ venv/
 /data/
 
 # Ignore Spark artifacts folder
+/artifacts/

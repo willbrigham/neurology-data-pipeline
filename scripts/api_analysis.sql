@@ -3,7 +3,7 @@ SELECT *
   FROM addresses a
        INNER JOIN taxonomy t
        ON t.number = a.number
- WHERE first_name LIKE 'SIM%'
+ WHERE t.number = 1023424306
 
 -- What states are these neurologists from?
 -- I am expecting only 'MA', why are there 35 distinct states
@@ -19,3 +19,8 @@ SELECT *
 
 SELECT t.number
   FROM taxonomy t
+ WHERE NOT EXISTS
+       (SELECT 1
+       FROM addresses a
+       WHERE a.number = t.number
+       AND a.state = 'MA')

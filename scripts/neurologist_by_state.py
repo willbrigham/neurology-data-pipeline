@@ -93,11 +93,11 @@ def save_json(data, path):
 
 if __name__ == "__main__":
     project_root = Path(__file__).resolve().parents[1]
-    data_dir = project_root / "data" / "raw"
+    data_dir = project_root/"data"/"raw"
 
     # Fetch and save RI neurologists
     ri_data = fetch_ri()
-    save_json(ri_data, data_dir / "neurologists_ri.json")
+    save_json(ri_data, data_dir/"neurologists_ri.json")
 
     # Fetch and save MA neurologists by city
     all_ma = []
@@ -109,4 +109,4 @@ if __name__ == "__main__":
                 all_ma.append(provider)
                 seen_npi_numbers.add(provider["number"])
 
-    save_json(all_ma, data_dir / "neurologists_ma.json")
+    save_json(all_ma, data_dir/"neurologists_ma.json")

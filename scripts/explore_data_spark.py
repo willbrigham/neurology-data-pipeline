@@ -50,7 +50,7 @@ df_addr = df.select(
 )
 
 df_addr.show(10, truncate=False)
-'''
+
 # Write the output
 df_tax.write.mode("overwrite").json("data/processed/taxonomy_flattened.json")
 df_addr.write.mode("overwrite").json("data/processed/address_flattened.json")
@@ -72,4 +72,4 @@ df_tax.write \
 # Write address table
 df_addr.write \
     .mode("overwrite") \
-    .jdbc(url=jdbc_url, table="Addresses", properties=connection_properties)'''
+    .jdbc(url=jdbc_url, table="Addresses", properties=connection_properties)

@@ -45,7 +45,6 @@ df_addr = df.select(
     col("address.city"),
     col("address.state"),
     col("address.postal_code"),
-    col("address.address_type"),
     col("address.address_purpose")
 )
 
@@ -67,9 +66,9 @@ connection_properties = {
 # Write taxonomy table
 df_tax.write \
     .mode("overwrite") \
-    .jdbc(url=jdbc_url, table="Taxonomy", properties=connection_properties)
+    .jdbc(url=jdbc_url, table="stg.taxonomy", properties=connection_properties)
 
 # Write address table
 df_addr.write \
     .mode("overwrite") \
-    .jdbc(url=jdbc_url, table="Addresses", properties=connection_properties)
+    .jdbc(url=jdbc_url, table="stg.address", properties=connection_properties)

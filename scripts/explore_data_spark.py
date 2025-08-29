@@ -65,14 +65,14 @@ df_addr.write.mode("overwrite").json("data/processed/address_flattened.json")
 jdbc_url = "jdbc:sqlserver://localhost:1433;databaseName=Neurology;encrypt=true;trustServerCertificate=true"
 connection_properties = {
     "user": "sa",
-    "password": "Brigham123$",  # tip: swap to an env var later
+    "password": "Brigham123$",
     "driver": "com.microsoft.sqlserver.jdbc.SQLServerDriver",
 }
 
 (
     df_tax.write
-        .mode("overwrite")          # staging-friendly; switch to 'append' if incremental
-        .option("truncate", "true") # preserves table/indices where supported
+        .mode("overwrite")          
+        .option("truncate", "true") 
         .option("batchsize", "10000")
         .jdbc(url=jdbc_url, table="stg.taxonomy", properties=connection_properties)
 )

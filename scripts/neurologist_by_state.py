@@ -3,6 +3,8 @@ Author: Will Brigham
 
 This script is to inspect the contents of the NPI API. It is a registry of all of the licensed medical professionals that is updated monthly.
 I want to see how much information this API endpoint will provide me and I think it will be a good start to the neurology database.
+
+python3 neurologist_by_state.py
 '''
 
 import requests

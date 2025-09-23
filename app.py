@@ -9,13 +9,15 @@ import pyodbc
 
 load_dotenv()
 
-CNX = pyodbc.connect(
-    "DRIVER={ODBC Driver 18 for SQL Server};"
-    "SERVER=localhost,1433;"
-    "DATABASE=Neurology;"
-    "UID=sa;PWD=YourStrong!Passw0rd;"
-    "Encrypt=yes;TrustServerCertificate=yes"
-)
+def get_cnx():
+    return pyodbc.connect(
+        "DRIVER={ODBC Driver 18 for SQL Server};"
+        f"SERVER={os.getenv('SQLSERVER_HOST','127.0.0.1')},{os.getenv('SQLSERVER_PORT','1433')};"
+        f"DATABASE={os.getenv('SQLSERVER_DB','master')};"
+        f"UID={os.getenv('SQLSERVER_USER')};PWD={os.getenv('SQLSERVER_PASSWORD')};"
+        "Encrypt=yes;TrustServerCertificate=yes",
+        timeout=5,
+    )
 
 def haversine_miles(lat1, lon1, lat2, lon2):
     R = 3958.7613
@@ -25,39 +27,34 @@ def haversine_miles(lat1, lon1, lat2, lon2):
 
 app = FastAPI()
 
-# Serve your frontend/ folder as the site root
-app.mount("/", StaticFiles(directory="frontend", html=True), name="static")
-
 @app.get("/api/providers")
+
 def providers(
     q: str = Query("", description="search text"),
     lat: Optional[float] = Query(None),
     lon: Optional[float] = Query(None),
     radius: Optional[float] = Query(50.0),
-    limit: int = Query(50, ge=1, le=200),
+    limit: int = Query(1000, ge=1, le=1000),
     offset: int = Query(0, ge=0),
 ):
-    # 1) Pull a reasonable slice from SQL Server
-    like = f"%{q.strip()}%" if q else "%"
-    cols = "provider_id, first_name, last_name, org_name, addr1, city, state, zip, lat, lon"
     sql = f"""
-      SELECT TOP (1000) {cols}
-      FROM silver.provider
-      WHERE state IN ('MA','RI')
-        AND (
-          (? = '%' ) OR
-          (CONCAT(first_name,' ',last_name) LIKE ?) OR
-          (org_name LIKE ?) OR
-          (city LIKE ?)
-        )
+      SELECT DISTINCT first_name, last_name, address_1, city, state, postal_code
+      FROM [Neurology].[stg].[taxonomy] t
+      INNER JOIN [Neurology].[stg].[address] a
+      ON a.number = t.number
+      WHERE a.state IN ('MA','RI')
+      AND a.address_purpose = 'LOCATION'
     """
     rows = []
-    with CNX.cursor() as c:
-        c.execute(sql, (like, like, like, like))
-        for r in c.fetchall():
-            row = dict(zip([d[0] for d in c.description], r))
-            row["name"] = (row.pop("first_name","") + " " + row.pop("last_name","")).strip()
-            rows.append(row)
+    with get_cnx() as cnx:
+        with cnx.cursor() as c:
+            c.execute(sql)
+            for r in c.fetchall():
+                row = dict(zip([d[0] for d in c.description], r))
+                row["name"] = (row.pop("first_name","") + " " + row.pop("last_name","")).strip()
+                row["addr1"] = row.pop("address_1","")
+                row["zip"] = row.pop("postal_code", "")
+                rows.append(row)
 
     # 2) Optional distance compute/filter/sort
     if lat is not None and lon is not None:
@@ -77,3 +74,5 @@ def providers(
     total = len(rows)
     items = rows[offset: offset+limit]
     return JSONResponse({"items": items, "total": total})
+
+app.mount("/", StaticFiles(directory="frontend", html=True), name="static")

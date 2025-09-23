@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NeuroFinder — Nearby Neurologists</title>
+    <style>
+        body {
+            margin: 0;
+            font: 16px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial;
+            background: #0b1020;
+            color: #e7ecff
+        }
+
+        .wrap {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 16px
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin: 0 0 6px
+        }
+
+        .sub {
+            color: #aab3d9;
+            margin: 0 0 14px
+        }
+
+        .controls {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            gap: 8px;
+            align-items: center;
+            margin: 12px 0
+        }
+
+        input,
+        button {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #263457;
+            background: #101736;
+            color: #e7ecff
+        }
+
+        button {
+            cursor: pointer
+        }
+
+        button:hover {
+            background: #152759
+        }
+
+        .status {
+            color: #aab3d9;
+            margin: 10px 0
+        }
+
+        .status.error {
+            color: #ff8c8c
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 8px
+        }
+
+        .card {
+            background: #111831;
+            border: 1px solid #1f2a4b;
+            border-radius: 12px;
+            padding: 12px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 4px 8px
+        }
+
+        .title {
+            font-weight: 600
+        }
+
+        .addr {
+            grid-column: 1 / -1;
+            color: #aab3d9
+        }
+
+        .dist {
+            color: #6ea8fe;
+            font-variant-numeric: tabular-nums
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>NeuroFinder</h1>
+        <p class="sub">Find nearby neurologists in MA & RI. Use your location or search by name/city/clinic.</p>
+
+        <div class="controls">
+            <input id="q" type="text" placeholder="Search name, city, or clinic" />
+            <button id="locBtn" type="button">Use my location</button>
+            <input id="maxMiles" type="number" value="50" min="1" title="Max miles" />
+        </div>
+
+        <div id="status" class="status">Loading providers…</div>
+        <ul id="results"></ul>
+        <p class="status">This page expects each provider to include <code>lat</code> and <code>lon</code> fields. Point
+            <code>DATA_URL</code> to your API or a local providers.json.</p>
+    </div>
+
+    <script>
+        // === Configure your data source ===
+        // For real use, set this to your API route, e.g. '/api/providers'
+        const DATA_URL = './providers.json';
+
+        let raw = [];
+        let userCoords = null;
+
+        function setStatus(msg, isErr = false) {
+            const el = document.getElementById('status');
+            el.textContent = msg; el.className = 'status' + (isErr ? ' error' : '');
+        }
+        const esc = s => (s ?? '').toString().replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" }[c]));
+        const toRad = d => d * Math.PI / 180;
+        function haversineMi(a, b) {
+            const R = 3958.7613; // miles
+            const dLat = toRad(b.lat - a.lat), dLon = toRad(b.lon - a.lon);
+            const lat1 = toRad(a.lat), lat2 = toRad(b.lat);
+            const h = Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) ** 2;
+            return 2 * R * Math.asin(Math.min(1, Math.sqrt(h)));
+        }
+        function normalize(p) {
+            const name = p.name ?? `${p.first_name ?? ''} ${p.last_name ?? ''}`.trim();
+            return {
+                id: p.id ?? p.provider_id ?? p.npi ?? p.number,
+                name,
+                org: p.org_name ?? '',
+                addr1: p.addr1 ?? p.address ?? '',
+                city: p.city ?? '', state: p.state ?? '', zip: p.zip ?? '',
+                lat: Number(p.lat ?? p.latitude),
+                lon: Number(p.lon ?? p.longitude)
+            };
+        }
+        function render() {
+            const q = document.getElementById('q').value.trim().toLowerCase();
+            const maxMiles = Number(document.getElementById('maxMiles').value) || Infinity;
+            let rows = raw.map(normalize).filter(p => {
+                const blob = `${p.name} ${p.org} ${p.addr1} ${p.city} ${p.state} ${p.zip}`.toLowerCase();
+                return !q || blob.includes(q);
+            });
+
+            if (userCoords) {
+                rows.forEach(p => {
+                    if (Number.isFinite(p.lat) && Number.isFinite(p.lon)) {
+                        p.distance = haversineMi({ lat: userCoords.latitude, lon: userCoords.longitude }, { lat: p.lat, lon: p.lon });
+                    } else { p.distance = Infinity; }
+                });
+                rows = rows.filter(p => p.distance <= maxMiles);
+                rows.sort((a, b) => (a.distance ?? Infinity) - (b.distance ?? Infinity));
+            } else {
+                rows.sort((a, b) => (a.city || '').localeCompare(b.city || '') || (a.name || '').localeCompare(b.name || ''));
+            }
+
+            const list = document.getElementById('results');
+            list.innerHTML = '';
+            const fmt = new Intl.NumberFormat(undefined, { maximumFractionDigits: 1 });
+            rows.slice(0, 100).forEach(p => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+          <div class="card">
+            <div class="title">${esc(p.name)}${p.org ? ' — ' + esc(p.org) : ''}</div>
+            ${userCoords && Number.isFinite(p.distance) ? `<div class="dist">${fmt.format(p.distance)} mi</div>` : '<div></div>'}
+            <div class="addr">${esc(p.addr1)}, ${esc(p.city)}, ${esc(p.state)} ${esc(p.zip)}</div>
+          </div>`;
+                list.appendChild(li);
+            });
+            setStatus(`${rows.length} match(es) ${userCoords ? 'within ' + maxMiles + ' miles' : ''}.`);
+        }
+
+        async function loadData() {
+            try {
+                const res = await fetch(DATA_URL, { cache: 'no-store' });
+                if (!res.ok) throw new Error('Failed to load providers');
+                // Accept either array or {items:[...]}
+                const data = await res.json();
+                raw = Array.isArray(data) ? data : (data.items || []);
+                setStatus(`Loaded ${raw.length} providers. Click “Use my location” to sort by distance.`);
+                render();
+            } catch (err) { setStatus(err.message, true); }
+        }
+
+        document.getElementById('q').addEventListener('input', render);
+        document.getElementById('maxMiles').addEventListener('change', render);
+        document.getElementById('locBtn').addEventListener('click', () => {
+            if (!('geolocation' in navigator)) { setStatus('Geolocation not supported', true); return; }
+            setStatus('Locating…');
+            navigator.geolocation.getCurrentPosition(
+                pos => { userCoords = pos.coords; setStatus('Location set.'); render(); },
+                err => { setStatus('Location error: ' + err.message, true); }
+            );
+        });
+
+        loadData();
+    </script>
+</body>
+
+</html>

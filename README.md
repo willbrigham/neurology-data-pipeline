@@ -13,17 +13,13 @@
 
 ## Tech Stack
 - Apache Kafka
-- Apache Spark (batch)
-- Apache Flink (stream)
+- PySpark (batch)
 - Snowflake
 - Python, FastAPI
-- Airflow (pipeline orchestration)
 
 ## Project Structure
 - `kafka/`: Data producers for Kafka streams
 - `spark_jobs/`: Batch ETL jobs to clean and enrich raw doctor data
-- `flink_jobs/`: Streaming pipeline for real-time updates
-- `snowflake/`: Data warehouse schema and queries
 - `api/`: Optional REST API for search
 
 ## Getting Started

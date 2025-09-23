@@ -1,0 +1,14 @@
+[
+    {
+        "provider_id": 1,
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "org_name": "Mass General Neurology",
+        "addr1": "55 Fruit St",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02114",
+        "lat": 42.362,
+        "lon": -71.069
+    }
+]

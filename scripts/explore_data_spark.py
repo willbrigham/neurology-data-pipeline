@@ -17,6 +17,8 @@ json_paths = [
 
 df_raw = spark.read.option("multiLine", True).json(json_paths)
 
+df_raw.printSchema()
+
 # Select nested taxonomy fields
 df_tax = (
     df_raw
@@ -58,7 +60,7 @@ df_tax.show(5, truncate=False)
 df_addr.show(5, truncate=False)
 
 # Write to the processed folder
-df_tax.write.mode("overwrite").json("data/processed/taxonomy_flattened.json")
+'''df_tax.write.mode("overwrite").json("data/processed/taxonomy_flattened.json")
 df_addr.write.mode("overwrite").json("data/processed/address_flattened.json")
 
 # Connect via jdbc to the staging tables
@@ -85,4 +87,4 @@ connection_properties = {
         .jdbc(url=jdbc_url, table="stg.address", properties=connection_properties)
 )
 
-spark.stop()
+spark.stop()'''
